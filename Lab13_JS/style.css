@@ -1,0 +1,46 @@
+.win__head {
+    background-color: lightgray;
+    border: gray solid 1px;
+    padding: 4px;
+}
+
+.win__main {
+    border: 1px solid gray;
+    border-top: none;
+    padding: 6px;
+}
+
+.button {
+    padding: 5px;
+    width: auto;
+    height: auto;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(22, 111, 201);
+    color: white;
+    text-align: center;
+}
+
+.modalWin {
+    margin: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.modalWin__col {
+    border-top: 1px solid gray;
+    padding: 6px;
+    width: 100%;
+    min-height: 60px;
+    max-height: auto;
+    display: flex;
+}
+
+.cross {
+    background-image: url(picture/cross.png);
+    margin-left: auto;
+    height: 30px;
+    width: 30px;
+    border: none;
+}
