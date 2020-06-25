@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div id="app">
+        <app__sphere></app__sphere>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+        Vue.component('app__sphere', {
+            data: function() {
+                return {
+                    visible: false
+                }
+            },
+            template: `<div><p v-if="visible"><img src="sphere.png" width="500px" height="500px"></p>
+            <button v-on:click="visible=!visible">{{visible?'Hide':'Show'}}</button></div>`
+        })
+        var app = new Vue({
+            el: '#app',
+        });
+    </script>
+</body>
+</html>
